@@ -7,6 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <ion-item>
+    <ion-input type="text" pleaceholder="QRcode data" [(ngModel)]="qrData"></ion-input>
+  </ion-item>
+  <!-- <button ion-button full (click)="generateQR()">Generate QRCode</button> -->
+  <ion-button color="primary" (click)="generateQR()">Generate QRCode</ion-button>
+
+  <!-- <ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode> -->
+  <!-- <ion-card *ngIf="createdCode">
+    <img [src]="createdCode">
+  </ion-card> -->
+  <!-- <div *ngIf="createdCode">
+    <svg id="barcode1"></svg>
+  </div> -->
+
+  <div style="height: 350px; width: auto; align-content: center;">
+    <svg style="height: inherit;"></svg>
+  </div>
+
 </ion-content>

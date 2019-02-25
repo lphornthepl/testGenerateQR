@@ -1,5 +1,7 @@
 {
   "name": "testQRgenerator",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
